@@ -13,8 +13,8 @@ langchain==0.2.0
 langchain-community>=0.0.13,<0.1.0
 langsmith>=0.1.86
 langflow==1.0.19.post2
-chromadb>=0.4.0    # Updated to match langflow's requirement
+chromadb>=0.4.0
 
 # Additional dependencies
-pydantic==1.10.13
+pydantic>=2.6.4    # Updated to match composio-langchain's requirement
 typing-extensions==4.9.0
