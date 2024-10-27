@@ -1,6 +1,6 @@
 # Core dependencies
 streamlit==1.31.0
-openai>=0.28.0,<1.0.0
+openai>=0.27.7,<0.28.0  # Changed to match langflow requirement
 python-dotenv==1.0.0
 networkx==3.2.1
 pyvis==0.3.2
@@ -9,7 +9,7 @@ pandas==2.2.0
 altair==5.0.1
 
 # LangChain ecosystem
-langchain>=0.0.186,<0.0.187  # Changed to match langflow requirement
+langchain>=0.0.186,<0.0.187
 langchain-community==0.0.13
 langflow==0.0.86
 chromadb>=0.3.21,<0.4.0
