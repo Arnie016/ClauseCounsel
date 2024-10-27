@@ -4,6 +4,8 @@ from langflow.load import run_flow_from_json
 from dotenv import load_dotenv
 import os
 import json  # For pretty-printing JSON
+import openai
+import streamlit as st
 
 # Configure logging to show only warnings and errors
 logging.basicConfig(level=logging.WARNING)
@@ -56,6 +58,21 @@ def get_response(question: str) -> dict:
     except ValueError as e:
         logging.error(f"An error occurred: {e}")
         return {"error": str(e)}
+
+def get_response(prompt):
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a legal assistant specializing in contract law."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.7,
+            max_tokens=1000
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"Error: {str(e)}"
 
 def main():
     try:
