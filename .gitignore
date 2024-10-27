@@ -1,0 +1,22 @@
+# Python
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.DS_Store
+.env*
+venv/
+env/
+*.log
+
+# Node.js
+node_modules/
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.json
+!package.json
