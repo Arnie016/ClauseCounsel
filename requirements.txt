@@ -12,7 +12,7 @@ altair==5.0.1
 langchain==0.0.350
 langchain-community==0.0.13
 langflow==0.0.86
-chromadb==0.4.22
+chromadb>=0.3.21,<0.4.0  # Changed to match langflow requirement
 
 # Additional dependencies
 pydantic<2.0.0
