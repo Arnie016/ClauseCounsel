@@ -10,11 +10,11 @@ altair==5.0.1
 
 # LangChain ecosystem with compatible versions
 langchain==0.2.0
-langchain-community>=0.0.13,<0.1.0
+langchain-community>=0.2.1,<0.3.0  # Updated to match langchain-google-community
 langsmith>=0.1.86
 langflow==1.0.19.post2
-chromadb>=0.4.0
+chromadb>=0.4.0 
 
 # Additional dependencies
-pydantic>=2.6.4    # Updated to match composio-langchain's requirement
+pydantic>=2.6.4
 typing-extensions==4.9.0
