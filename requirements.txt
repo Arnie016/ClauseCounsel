@@ -1,19 +1,19 @@
-# Core dependencies with compatible versions
+# Core dependencies with conservative versions
 streamlit==1.31.0
-openai>=0.27.7,<0.28.0  # Specific version for langflow
+openai==0.27.8          # Older version known to work with langflow
 python-dotenv==1.0.0
 networkx==3.2.1
 pyvis==0.3.2
 scikit-learn==1.3.0
-pandas>=1.5.3,<2.0.0    # Compatible with langflow
+pandas==1.5.3           # Specific version for langflow compatibility
 altair==5.0.1
 
-# LangChain ecosystem with aligned versions
-langchain>=0.0.186,<0.0.187
+# LangChain ecosystem with fixed versions
+langchain==0.0.186      # Specific version for langflow
 langchain-community==0.0.13
 langflow==0.0.86
-chromadb>=0.3.21,<0.4.0
+chromadb==0.3.29       # Older version for compatibility
 
 # Additional dependencies
-pydantic<2.0.0
+pydantic==1.10.13      # Older version for better compatibility
 typing-extensions==4.9.0
