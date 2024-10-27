@@ -1,6 +1,6 @@
 # Core dependencies
 streamlit==1.31.0
-openai==0.27.8
+openai>=1.40.0,<2.0.0  # Updated to match langchain-openai requirement
 python-dotenv==1.0.0
 networkx==3.2.1
 pyvis==0.3.2
@@ -10,10 +10,10 @@ altair==5.0.1
 
 # LangChain ecosystem with compatible versions
 langchain==0.2.0
-langchain-community>=0.2.1,<0.3.0  # Updated to match langchain-google-community
+langchain-community>=0.2.1,<0.3.0
 langsmith>=0.1.86
 langflow==1.0.19.post2
-chromadb>=0.4.0 
+chromadb>=0.4.0
 
 # Additional dependencies
 pydantic>=2.6.4
