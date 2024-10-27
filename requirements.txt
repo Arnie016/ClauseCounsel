@@ -1,0 +1,11 @@
+streamlit
+openai
+python-dotenv
+networkx
+pyvis
+scikit-learn
+pandas
+altair
+langflow
+langchain
+chromadb
