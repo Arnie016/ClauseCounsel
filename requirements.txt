@@ -8,10 +8,10 @@ scikit-learn==1.3.0
 pandas==1.5.3
 altair==5.0.1
 
-# LangChain ecosystem
-langchain==0.0.186
+# LangChain ecosystem with aligned versions
+langchain>=0.2.16,<0.3.0  # Updated to match langflow requirements
 langchain-community==0.0.13
-langflow==1.0.19.post2  # Latest stable version
+langflow==1.0.19.post2
 chromadb==0.3.29
 
 # Additional dependencies
