@@ -11,13 +11,13 @@ altair==5.0.1
 # LangChain ecosystem with strict versions
 langchain==0.2.0
 langchain-community==0.2.1
-langchain-mongodb==0.1.8  # Added explicit version
+langchain-mongodb==0.1.8
 langsmith==0.1.86
 langflow==1.0.19.post2
 chromadb>=0.4.0
 
 # Additional dependencies
-pydantic==2.6.4
+pydantic>=2.7.0    # Updated to match pydantic-settings requirement
 pydantic-settings==2.4.0
 typing-extensions>=4.12.2,<5.0.0
 
