@@ -8,9 +8,10 @@ scikit-learn==1.3.0
 pandas==1.5.3
 altair==5.0.1
 
-# LangChain ecosystem with aligned versions
-langchain>=0.2.16,<0.3.0  # Updated to match langflow requirements
-langchain-community==0.0.13
+# LangChain ecosystem with compatible versions
+langchain==0.2.0
+langchain-community>=0.0.13,<0.1.0
+langsmith>=0.1.86  # Explicitly specify langsmith version
 langflow==1.0.19.post2
 chromadb==0.3.29
 
